@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phefry | Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <meta name="description" content="Phefry Mukuza's portfolio - Frontend Developer, Code Lover, Lifelong Learner">
+  <meta property="og:title" content="Phefry | Portfolio">
+  <meta property="og:description" content="Frontend Developer | Code Lover | Lifelong Learner">
+  <meta property="og:image" content="URL_TO_YOUR_PROFILE_OR_PROJECT_IMAGE">
+  <meta property="og:type" content="website">
+  <style>
+    @media (max-width: 640px) {
+      .max-w-6xl { max-width: 100% !important; }
+      .max-w-4xl { max-width: 100% !important; }
+      .flex { flex-direction: column !important; }
+      .gap-6 { gap: 1rem !important; }
+      .px-4 { padding-left: 1rem !important; padding-right: 1rem !important; }
+      .py-4, .py-16, .py-12, .py-20 { padding-top: 1.5rem !important; padding-bottom: 1.5rem !important; }
+      .text-5xl { font-size: 2rem !important; }
+      .text-3xl { font-size: 1.5rem !important; }
+      .rounded-full { width: 72px !important; height: 72px !important; }
+      .h-32 { height: 96px !important; }
+      .min-w-full { min-width: 100% !important; }
+      .p-6 { padding: 1rem !important; }
+      .mb-4, .mb-6, .mb-8 { margin-bottom: 1rem !important; }
+      .space-x-4 > :not([hidden]) ~ :not([hidden]) { margin-left: 0.5rem !important; }
+      .flex-wrap { flex-wrap: wrap !important; }
+      .justify-between { justify-content: flex-start !important; }
+      .items-center { align-items: flex-start !important; }
+      .text-center { text-align: left !important; }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <header class="bg-gray-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold" data-en="Phefry" data-fr="Phefry">Phefry</h1>
+      <nav>
+        <ul class="flex gap-6 items-center">
+          <li><a href="#about" class="hover:text-gray-300" data-en="About" data-fr="À propos">About</a></li>
+          <li><a href="#projects" class="hover:text-gray-300" data-en="Projects" data-fr="Projets">Projects</a></li>
+          <li><a href="#contact" class="hover:text-gray-300" data-en="Contact" data-fr="Contact">Contact</a></li>
+          <li>
+            <select id="lang-switcher" class="bg-gray-900 text-white border border-gray-700 rounded px-2 py-1">
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<section id="hero" class="bg-gradient-to-r from-yellow-100 via-white to-pink-100 py-20 px-4 text-center">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-5xl font-extrabold text-gray-900 mb-4"
+        data-en="Hello, I'm <span class='text-purple-600'>Phefry</span>"
+        data-fr="Bonjour, je suis <span class='text-purple-600'>Phefry</span>">
+      Hello, I'm <span class="text-purple-600">Phefry</span>
+    </h1>
+    <p class="text-xl text-gray-700 mb-6"
+       data-en="Frontend Developer | Code Lover | Lifelong Learner"
+       data-fr="Développeur Frontend | Passionné de code | Apprenant à vie">
+      Frontend Developer | Code Lover | Lifelong Learner
+    </p>
+    <a href="#projects"
+       class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition"
+       data-en="View Projects"
+       data-fr="Voir les projets">
+      View Projects
+    </a>
+    <a href="#contact"
+       class="border border-purple-600 text-purple-600 px-6 py-3 rounded-full hover:bg-purple-100 transition"
+       data-en="Contact Me"
+       data-fr="Contactez-moi">
+      Contact Me
+    </a>
+  </div>
+</section>
+
+<section id="about" class="bg-white py-16 px-4">
+  <div class="max-w-4xl mx-auto flex flex-col items-center text-center gap-10">
+    <div>
+      <img src="images/profile.jpg" alt="Phefry Mukuza" class="w-24 h-24 rounded-full mx-auto mb-4">
+      <h2 class="text-3xl font-bold mb-6 text-gray-900"
+          data-en="About Me"
+          data-fr="À propos de moi">
+        About Me
+      </h2>
+      <p class="text-gray-700 leading-relaxed mb-4"
+         data-en="I’m a passionate and self-driven programmer with a love for creating clean, responsive, and user-friendly websites. My coding journey began with HTML and CSS, and I’ve since expanded into JavaScript, Tailwind CSS, React, and Node.js as I work toward becoming a full-stack developer."
+         data-fr="Je suis un programmeur passionné et autodidacte, amoureux de la création de sites web propres, réactifs et conviviaux. Mon parcours a commencé avec HTML et CSS, puis j'ai élargi mes compétences à JavaScript, Tailwind CSS, React et Node.js pour devenir développeur full-stack.">
+        I’m a passionate and self-driven programmer...
+      </p>
+      <ul class="text-gray-700 space-y-3 flex flex-col items-center">
+        <li class="flex items-start gap-2">
+          <svg class="w-5 h-5 text-purple-600 mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2v2h-2v-2zm1-12a1 1 0 011 1v7a1 1 0 01-2 0V3a1 1 0 011-1z" /></svg>
+          <span data-en="Full-stack development with React & Node.js"
+                data-fr="Développement full-stack avec React & Node.js">
+            Full-stack development with React & Node.js
+          </span>
+        </li>
+        <li class="flex items-start gap-2">
+          <svg class="w-5 h-5 text-purple-600 mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12h-2v5h2V6zm-1 10a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" /></svg>
+          <span data-en="Experience with JavaScript, Tailwind CSS, and animations"
+                data-fr="Expérience avec JavaScript, Tailwind CSS et animations">
+            Experience with JavaScript, Tailwind CSS, and animations
+          </span>
+        </li>
+        <li class="flex items-start gap-2">
+          <svg class="w-5 h-5 text-purple-600 mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12h-2v6h2V6z" /></svg>
+          <span data-en="Projects include a portfolio, password validator, and landing pages"
+                data-fr="Les projets incluent un portfolio, un validateur de mot de passe et des pages d'atterrissage">
+            Projects include a portfolio, password validator, and landing pages
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="bg-gray-50 py-16 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-8"
+        data-en="Projects"
+        data-fr="Projets">
+      Projects
+    </h2>
+
+    <div 
+      x-data="{ activeSlide: 0, slides: 3 }"
+      class="relative overflow-hidden"
+    >
+      <div class="flex transition-transform duration-500"
+           :style="'transform: translateX(-' + (activeSlide * 100) + '%)'">
+        
+        <div class="min-w-full p-6">
+          <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition h-full">
+            <img src="https://camo.githubusercontent.com/17bca5b87ee70841ac7f845b7bf1730c6e3a54917ba12f47e117880e5ffd7642/68747470733a2f2f696d616765732e706578656c732e636f6d2f70686f746f732f32393635303739362f706578656c732d70686f746f2d32393635303739362f667265652d70686f746f2d6f662d636f7a792d636166652d7461626c652d776974682d63617070756363696e6f2d696e2d697374616e62756c2e6a7065673f6175746f3d636f6d70726573732663733d74696e797372676226773d363030266c617a793d6c6f6164" alt="Portfolio Website Screenshot" class="rounded mb-4 mx-auto h-32 object-cover">
+            <h3 class="text-xl font-semibold mb-2"
+                data-en="Portfolio Website"
+                data-fr="Site Portfolio">
+              Portfolio Website
+            </h3>
+            <p class="text-gray-600 mb-4"
+               data-en="A responsive personal portfolio made with HTML and Tailwind CSS."
+               data-fr="Un portfolio personnel réactif réalisé avec HTML et Tailwind CSS.">
+              A responsive personal portfolio made with HTML and Tailwind CSS.
+            </p>
+            <a href="#" class="text-purple-600 hover:underline"
+               data-en="View Live →"
+               data-fr="Voir en ligne →">
+              View Live →
+            </a>
+          </div>
+        </div>
+
+        <div class="min-w-full p-6">
+          <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition h-full">
+            <img src="images/password-validator.png" alt="Password Validator Screenshot" class="rounded mb-4 mx-auto h-32 object-cover">
+            <h3 class="text-xl font-semibold mb-2">Password Validator (JS)</h3>
+            <p class="text-gray-600 mb-4">A JavaScript tool that checks password strength using regex.</p>
+            <a href="#" class="text-purple-600 hover:underline">View Code →</a>
+          </div>
+        </div>
+
+        <div class="min-w-full p-6">
+          <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition h-full">
+            <img src="images/css-landing-page.png" alt="CSS Landing Page Screenshot" class="rounded mb-4 mx-auto h-32 object-cover">
+            <h3 class="text-xl font-semibold mb-2">CSS Landing Page</h3>
+            <p class="text-gray-600 mb-4">A visually appealing page with animations and layout done in pure CSS.</p>
+            <a href="#" class="text-purple-600 hover:underline">View Live →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-6 space-x-4">
+        <button 
+          class="w-3 h-3 rounded-full bg-gray-400" 
+          :class="{ 'bg-purple-600': activeSlide === 0 }" 
+          @click="activeSlide = 0"></button>
+        <button 
+          class="w-3 h-3 rounded-full bg-gray-400" 
+          :class="{ 'bg-purple-600': activeSlide === 1 }" 
+          @click="activeSlide = 1"></button>
+        <button 
+          class="w-3 h-3 rounded-full bg-gray-400" 
+          :class="{ 'bg-purple-600': activeSlide === 2 }" 
+          @click="activeSlide = 2"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="bg-gray-50 py-12 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6 text-gray-900"
+        data-en="Skills"
+        data-fr="Compétences">
+      Skills
+    </h2>
+    <div class="flex flex-wrap justify-center gap-6">
+      <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full font-semibold"
+            data-en="HTML5"
+            data-fr="HTML5">
+        HTML5
+      </span>
+      <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full font-semibold"
+            data-en="CSS3"
+            data-fr="CSS3">
+        CSS3
+      </span>
+      <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-semibold"
+            data-en="JavaScript"
+            data-fr="JavaScript">
+        JavaScript
+      </span>
+      <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full font-semibold"
+            data-en="Tailwind CSS"
+            data-fr="Tailwind CSS">
+        Tailwind CSS
+      </span>
+      <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-semibold"
+            data-en="Git"
+            data-fr="Git">
+        Git
+      </span>
+      <span class="bg-pink-100 text-pink-700 px-4 py-2 rounded-full font-semibold"
+            data-en="React"
+            data-fr="React">
+        React
+      </span>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="py-16 bg-gray-100 px-4 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-4"
+        data-en="Contact Me"
+        data-fr="Contactez-moi">
+      Contact Me
+    </h2>
+    <form action="https://formspree.io/f/yourformid" method="POST" class="grid gap-4">
+      <input type="text" name="name" placeholder="Your Name"
+             data-en="Your Name" data-fr="Votre nom"
+             class="border p-3 rounded" required />
+      <input type="email" name="email" placeholder="Your Email" class="border p-3 rounded" required />
+      <textarea name="message" placeholder="Message" class="border p-3 rounded h-32" required></textarea>
+      <button type="submit"
+              class="bg-gray-900 text-white py-3 rounded hover:bg-gray-700 transition"
+              data-en="Send Message"
+              data-fr="Envoyer le message">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+<footer class="bg-gray-900 text-white py-6">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <p class="mb-2"
+       data-en="© 2025 Phefry Mukuza. All rights reserved."
+       data-fr="© 2025 Phefry Mukuza. Tous droits réservés.">
+      © 2025 Phefry Mukuza. All rights reserved.
+    </p>
+    <a href="https://github.com/phefry" class="hover:text-purple-400"
+       data-en="GitHub"
+       data-fr="GitHub">
+      GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/yourprofile" class="hover:text-purple-400"
+       data-en="LinkedIn"
+       data-fr="LinkedIn">
+      LinkedIn
+    </a>
+    <a href="#contact" class="hover:text-purple-400"
+       data-en="Contact"
+       data-fr="Contact">
+      Contact
+    </a>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const switcher = document.getElementById('lang-switcher');
+    switcher.addEventListener('change', (e) => {
+      const lang = e.target.value;
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.innerHTML = el.getAttribute('data-' + lang);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
